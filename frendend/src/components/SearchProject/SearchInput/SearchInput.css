@@ -1,0 +1,28 @@
+.search-input-container {
+  position: relative;
+}
+
+.search-input-container input {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  padding-right: 40px;
+  outline: none;
+}
+
+.search-input-container button {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.search-input-container button:hover {
+  opacity: 1;
+}
