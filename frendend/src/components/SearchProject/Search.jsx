@@ -34,35 +34,6 @@ const Search = () => {
         }
     };
 
-    const submitMovie = async () => {
-        try {
-            const response = await axios(API_URL, {
-                method: 'POST',
-                data: {
-                    movieName: searchInputvalue,
-                }
-            })
-            setSearchList(response.data.results)
-        } catch (error) {
-            console.log(`Api post not working..${error}`);
-        }
-    }
-
-    const deleteMovie = async () => {
-        try {
-            const response = await axios(API_URL, {
-                method: 'DELETE',
-                data: {
-                    movieName: searchInputvalue,
-                }
-            })
-            setSearchList(response.data.results)
-        } catch (error) {
-            console.log(`Api post not working..${error}`);
-        }
-    }
-
-
     useEffect(() => {
         const timeout = setTimeout(() => {
             if (searchInputvalue) {
